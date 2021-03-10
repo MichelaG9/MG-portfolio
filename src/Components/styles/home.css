@@ -1,0 +1,90 @@
+svg {
+    stroke: white;
+    stroke-width: 2px;
+    fill: #960200;
+    cursor: pointer;
+}
+
+/* Capital Letters */
+/* Draw borders */
+.draw-me{
+    stroke-dasharray: 1200;
+    stroke-dashoffset: 1200;
+    animation: draw 1500ms ease-out forwards;
+}
+
+@keyframes draw {
+    0%{stroke-dashoffset: 1200;}
+    100%{stroke-dashoffset: 0;}
+}
+
+/* Initial animation */
+.capital-m{
+    animation: colorChange 2200ms linear 1500ms;
+}
+
+.capital-g{
+    animation: colorChange 2200ms linear 3900ms;
+}
+
+@keyframes colorChange {
+    0%{fill: #960200;}
+    5%{fill: #c5413f;}
+    95%{fill: #c5413f;}
+    100%{fill: #960200;}
+}
+
+/* Hover after initial animation */
+#name:hover #m {
+    fill: #c5413f;
+}
+
+#surname:hover #g{
+    fill: #c5413f;
+}
+
+/* Body Letters */
+.text-svg{
+    transition: all 280ms ease-in-out;
+    width: 0px;
+}
+
+/* Initial animation */
+.show-name{
+    animation: showText 1.5s ease-in-out 2000ms;
+}
+
+.show-surname{
+    animation: showText 1.5s ease-in-out 4400ms;
+}
+
+@keyframes showText {
+    0%{width: 0px;}
+    40%{width: 416.95000000000005px;}
+    60%{width: 416.95000000000005px;}
+    100%{width: 0px;}
+}
+
+/* Hover after initial animation */
+#name:hover #name_body {
+    transition: width 500ms ease-in-out;
+    width: 416.95000000000005px;
+}
+
+#surname:hover #surname_body {
+    transition: width 500ms ease-in-out;
+    width: 416.95000000000005px;
+}
+
+/* Animation subtitle */
+
+#subtitle {
+    opacity: 0;
+    margin-top: 40px;
+    animation: fadein 1000ms linear 6.5s forwards;
+}
+
+@keyframes fadein {
+    0%{margin-top: 40px; opacity: 0;}
+    100%{margin-top: 0px; opacity: 1;}
+}
