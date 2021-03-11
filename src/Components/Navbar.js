@@ -25,7 +25,7 @@ const Navigationbar = () => {
                         </NavLink>
 
                         <NavLink exact to="/contacts" className="nav-link">
-                            Contacts
+                            Contact
                         </NavLink>
                     
                     </Nav>
