@@ -7,11 +7,11 @@ const Home = () => {
     const loadAnimation = () => {
         const capitalM = document.querySelector(".capital-m");
         const capitalG = document.querySelector(".capital-g");
-        const surname_body = document.querySelector("#surname_body");
+        const subtitle = document.querySelector("#subtitle");
         const name = document.querySelector(".name");
         const surname = document.querySelector(".surname");
 
-        surname_body.addEventListener('animationend', () => {
+        subtitle.addEventListener('animationend', () => {
             capitalM.id = "m";
             capitalG.id = "g";
             name.id = "name";
@@ -26,7 +26,7 @@ const Home = () => {
     return ( 
         <Container fluid className="h-100 d-flex flex-column justify-content-center align-items-center pb-5">
             <Row className="justify-content-center">
-                <Col xs="auto" className="name d-flex align-items-end mx-0 pr-3 pl-0">
+                <Col xs="auto" className="name d-flex align-items-end mx-0 pr-3 pl-0 mb-3">
                     <svg className="capital-m mr-3" width="180.85" height="193" viewBox="-2 -2 180.85 193">
                         <path className="draw-me" d="M 29.43 189 L 6.75 189 A 7.619 7.619 0 0 1 4.437 188.664 A 6.208 6.208 0 0 1 1.89 187.11 A 6.24 6.24 0 0 1 0.001 182.605 A 7.664 7.664 0 0 1 0 182.52 L 0 6.75 A 7.619 7.619 0 0 1 0.337 4.437 A 6.208 6.208 0 0 1 1.89 1.89 A 6.38 6.38 0 0 1 5.925 0.039 A 8.659 8.659 0 0 1 6.75 0 L 28.08 0 A 11.212 11.212 0 0 1 30.252 0.197 Q 31.488 0.441 32.44 0.989 A 5.6 5.6 0 0 1 33.75 2.025 Q 35.153 3.528 35.812 4.511 A 5.743 5.743 0 0 1 36.18 5.13 L 88.29 102.33 L 140.94 5.13 A 5.672 5.672 0 0 1 141.295 4.531 Q 141.953 3.544 143.37 2.025 Q 145.26 0 149.04 0 L 170.1 0 A 7.619 7.619 0 0 1 172.414 0.337 A 6.208 6.208 0 0 1 174.96 1.89 A 6.38 6.38 0 0 1 176.812 5.925 A 8.659 8.659 0 0 1 176.85 6.75 L 176.85 182.52 Q 176.85 185.22 174.96 187.11 A 6.38 6.38 0 0 1 170.925 188.962 A 8.659 8.659 0 0 1 170.1 189 L 147.42 189 A 7.559 7.559 0 0 1 145.364 188.735 A 5.67 5.67 0 0 1 142.695 187.11 Q 140.94 185.22 140.94 182.52 L 140.94 65.61 L 103.14 137.7 Q 101.79 140.13 99.63 141.885 A 7.549 7.549 0 0 1 96.589 143.351 Q 95.386 143.64 93.96 143.64 L 82.89 143.64 Q 80.254 143.64 78.472 142.787 A 6.176 6.176 0 0 1 77.085 141.885 Q 75.06 140.13 73.71 137.7 L 35.91 65.61 L 35.91 182.52 Q 35.91 185.22 34.02 187.11 A 6.24 6.24 0 0 1 29.515 189 A 7.664 7.664 0 0 1 29.43 189 Z" />
                     </svg>
@@ -36,7 +36,7 @@ const Home = () => {
                     </svg>
                 </Col>
 
-                <Col xs="auto" className="surname d-flex align-items-end mx-0 px-0">
+                <Col xs="auto" className="surname d-flex align-items-end mx-0 px-0 mb-3">
                     <svg className="capital-g mr-3" width="164.92" height="198.4" viewBox="-2 -0.5 164.92 198.4" >
                         <path className="draw-me" d="M 152.669 96.111 L 152.669 169.675 A 59.769 59.769 0 0 1 133.795 185.651 A 77.573 77.573 0 0 1 123.797 190.242 Q 105.34 197.229 81.873 197.229 A 90.633 90.633 0 0 1 57.802 194.141 A 76.462 76.462 0 0 1 39.158 186.287 A 72.747 72.747 0 0 1 10.801 155.61 A 87.12 87.12 0 0 1 10.484 154.976 A 98.29 98.29 0 0 1 1.923 128.394 A 130.656 130.656 0 0 1 0.003 107.449 L 0.003 92.419 A 147 147 0 0 1 2.245 65.92 Q 6.838 40.889 20.833 24.458 A 67.992 67.992 0 0 1 63.438 1.173 A 99.065 99.065 0 0 1 78.973 0.002 Q 105.126 0.002 122.492 10.546 A 59.386 59.386 0 0 1 129.861 15.823 A 61.325 61.325 0 0 1 148.272 42.997 A 89.387 89.387 0 0 1 152.537 61.438 L 119.842 61.438 Q 115.026 31.285 88.177 27.354 A 59.018 59.018 0 0 0 79.632 26.765 A 49.352 49.352 0 0 0 65.201 28.761 A 36.992 36.992 0 0 0 45.552 42.915 Q 37.217 54.452 34.635 73.692 A 138.386 138.386 0 0 0 33.489 90.31 L 33.489 105.076 Q 33.489 136.189 46.607 153.393 A 42.213 42.213 0 0 0 77.385 170.329 A 58.465 58.465 0 0 0 83.059 170.598 Q 108.295 170.598 119.156 159.303 A 26.934 26.934 0 0 0 119.446 158.997 L 119.446 121.423 L 79.895 121.423 L 79.895 96.111 L 152.669 96.111 Z" />
                     </svg>
@@ -47,8 +47,10 @@ const Home = () => {
                 </Col>
 
             </Row>
-            <Row className="pt-5 justify-content-center text-white" id="subtitle">
-                FRONT-END DEVELOPER
+            <Row className="mt-5 justify-content-center text-white">
+                <Col id="subtitle">
+                    FRONT-END DEVELOPER
+                </Col>
             </Row>
         </Container>
      );

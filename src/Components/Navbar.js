@@ -11,10 +11,18 @@ const Navigationbar = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto">
-                        <Nav.Link className="text-white mr-3" href="#home">Home</Nav.Link>
-                        <Nav.Link className="text-white mr-3" href="#link">About</Nav.Link>
-                        <Nav.Link className="text-white mr-3" href="#link">Projects</Nav.Link>
-                        <Nav.Link className="text-white mr-3" href="#link">Contacts</Nav.Link>
+                    <Nav.Item>
+                        <Link to="/" className="nav-link" aria-current="page">
+                            Home
+                        </Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                        <Link to="/about" className="nav-link">
+                            About
+                        </Link>
+                    </Nav.Item>
+                        <Nav.Link eventKey="3" className=" mr-3" >Projects</Nav.Link>
+                        <Nav.Link eventKey="4" className=" mr-3" >Contacts</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

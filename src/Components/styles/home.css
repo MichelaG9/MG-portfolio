@@ -10,7 +10,7 @@ svg {
 .draw-me{
     stroke-dasharray: 1200;
     stroke-dashoffset: 1200;
-    animation: draw 1500ms ease-out forwards;
+    animation: draw 1500ms linear forwards;
 }
 
 @keyframes draw {
@@ -19,12 +19,13 @@ svg {
 }
 
 /* Initial animation */
-.capital-m{
-    animation: colorChange 2200ms linear 1500ms;
-}
-
-.capital-g{
-    animation: colorChange 2200ms linear 3900ms;
+@media screen and (min-width: 992px) {
+    .capital-m{
+        animation: colorChange 2200ms linear 1500ms;
+    }
+    .capital-g{
+        animation: colorChange 2200ms linear 3900ms;
+    }
 }
 
 @keyframes colorChange {
@@ -50,12 +51,14 @@ svg {
 }
 
 /* Initial animation */
-.show-name{
-    animation: showText 1.5s ease-in-out 2000ms;
-}
+@media screen and (min-width: 992px) {
+    .show-name{
+        animation: showText 1.5s ease-in-out 2000ms;
+    }
 
-.show-surname{
-    animation: showText 1.5s ease-in-out 4400ms;
+    .show-surname{
+        animation: showText 1.5s ease-in-out 4400ms;
+    }
 }
 
 @keyframes showText {
@@ -66,25 +69,39 @@ svg {
 }
 
 /* Hover after initial animation */
-#name:hover #name_body {
-    transition: width 500ms ease-in-out;
-    width: 416.95000000000005px;
-}
+@media screen and (min-width: 992px) {
+    #name:hover #name_body {
+        transition: width 500ms ease-in-out;
+        width: 416.95000000000005px;
+    }
 
-#surname:hover #surname_body {
-    transition: width 500ms ease-in-out;
-    width: 416.95000000000005px;
+    #surname:hover #surname_body {
+        transition: width 500ms ease-in-out;
+        width: 416.95000000000005px;
+    }
 }
 
 /* Animation subtitle */
 
 #subtitle {
+    height: 30px;
     opacity: 0;
-    margin-top: 40px;
-    animation: fadein 1000ms linear 6.5s forwards;
+    padding-top: 30px;
+}
+
+@media screen and (max-width: 992px) {
+    #subtitle{
+        animation: fadein 500ms linear 1600ms forwards;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #subtitle{
+        animation: fadein 500ms linear 6.5s forwards;
+    }
 }
 
 @keyframes fadein {
-    0%{margin-top: 40px; opacity: 0;}
-    100%{margin-top: 0px; opacity: 1;}
+    0%{padding-top: 30px; opacity: 0;}
+    100%{padding-top: 0px; opacity: 1;}
 }
