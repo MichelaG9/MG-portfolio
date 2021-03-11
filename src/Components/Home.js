@@ -1,6 +1,9 @@
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Image } from 'react-bootstrap';
 import { useEffect } from 'react';
 import './styles/home.css';
+import linkedin from './images/linkedin.png';
+import github from './images/github.png';
+import instagram from './images/instagram.png';
 
 const Home = () => {
 
@@ -24,7 +27,7 @@ const Home = () => {
     })
 
     return ( 
-        <Container fluid className="h-100 d-flex flex-column justify-content-center align-items-center pb-5">
+        <Container fluid className="h-100 d-flex flex-column justify-content-center  align-items-center">
             <Row className="justify-content-center">
                 <Col xs="auto" className="name d-flex align-items-end mx-0 pr-3 pl-0 mb-3">
                     <svg className="capital-m mr-3" width="180.85" height="193" viewBox="-2 -2 180.85 193">
@@ -52,6 +55,19 @@ const Home = () => {
                     FRONT-END DEVELOPER
                 </Col>
             </Row>
+
+            <Row className="mt-5">
+                <Col xs="auto">
+                    <Image src={linkedin} />
+                </Col>
+                <Col xs="auto">
+                    <Image src={github} />
+                </Col >
+                <Col xs="auto">
+                    <Image src={instagram} />
+                </Col>
+            </Row>
+
         </Container>
      );
 }
