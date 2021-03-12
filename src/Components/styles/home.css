@@ -3,6 +3,11 @@
     stroke-width: 2px;
     fill: #960200;
     cursor: pointer;
+    
+}
+
+#draw-shadow {
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.64));
 }
 
 /* Capital Letters */
@@ -10,7 +15,7 @@
 .draw-me{
     stroke-dasharray: 1200;
     stroke-dashoffset: 1200;
-    animation: draw 1500ms linear forwards;
+    animation: draw 1000ms linear forwards;
 }
 
 @keyframes draw {
@@ -21,10 +26,10 @@
 /* Initial animation */
 @media screen and (min-width: 992px) {
     .capital-m{
-        animation: colorChange 2200ms linear 1500ms;
+        animation: colorChange 2200ms linear 1000ms;
     }
     .capital-g{
-        animation: colorChange 2200ms linear 3900ms;
+        animation: colorChange 2200ms linear 3500ms;
     }
 }
 
@@ -53,18 +58,18 @@
 /* Initial animation */
 @media screen and (min-width: 992px) {
     .show-name{
-        animation: showText 1.5s ease-in-out 2000ms;
+        animation: showText 1500ms ease-in-out 1500ms;
     }
 
     .show-surname{
-        animation: showText 1.5s ease-in-out 4400ms;
+        animation: showText 1500ms ease-in-out 4000ms;
     }
 }
 
 @keyframes showText {
     0%{width: 0px;}
-    40%{width: 416.95000000000005px;}
-    60%{width: 416.95000000000005px;}
+    40%{width: 432.95000000000005px;}
+    60%{width: 432.95000000000005px;}
     100%{width: 0px;}
 }
 
@@ -72,12 +77,12 @@
 @media screen and (min-width: 992px) {
     #name:hover #name_body {
         transition: width 500ms ease-in-out;
-        width: 416.95000000000005px;
+        width: 432.95000000000005px;
     }
 
     #surname:hover #surname_body {
         transition: width 500ms ease-in-out;
-        width: 416.95000000000005px;
+        width: 432.95000000000005px;
     }
 }
 
