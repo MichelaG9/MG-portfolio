@@ -10,10 +10,10 @@ import {Container} from 'react-bootstrap';
 function App() {
   return (
     <Router>
-      <div className="App" style={{minHeight: '100vh'}}>
-        <Navigationbar />
+      <div className="App">
+        <Navigationbar/>
 
-        <Container fluid="md" className="content vh-100">
+        <Container fluid >
             <Switch>
 
               <Route exact path="/">

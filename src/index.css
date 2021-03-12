@@ -1,6 +1,15 @@
 * {
   margin: 0;
   padding: 0;
-  overflow: hidden;
   font-family: 'Rubik', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #960200;
+}
+
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 100px;
 }

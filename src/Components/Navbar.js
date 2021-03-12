@@ -3,14 +3,14 @@ import { NavLink, Link } from 'react-router-dom';
 
 const Navigationbar = () => {
     return ( 
-        <Container fluid>
+        <Container fluid className="sticky-top" style={{ backgroundColor: "#960200"}} >
             <Navbar variant="dark" expand="md">
                 <Link to="/">  
                     <Navbar.Brand className="text-white">MG.</Navbar.Brand>
                 </Link>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" className="border-0"/>
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="ml-auto">
+                    <Nav className="ml-auto" style={{ letterSpacing: "1px" }}>
 
                         <NavLink exact to="/" className="nav-link">
                             HOME

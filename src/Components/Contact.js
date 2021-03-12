@@ -9,11 +9,10 @@ const Contact = () => {
 
     const [modalShow, setModalShow] = useState(false);
 
-
     return ( 
         <div className="contacts">
             <Row className="my-5">
-                <Col md={12} lg={{ span: 10, offset: 1 }}>
+                <Col md={12} lg={{ span: 8, offset: 2 }}>
                     <Card className="text-center py-5 mb-3" id="draw-shadow">
                         <Card.Body>
                             <Card.Title as="h1" className="text-black" style={{ fontWeight: '800'}}>Contact me!</Card.Title>
