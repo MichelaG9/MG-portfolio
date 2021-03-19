@@ -4,8 +4,9 @@ import css from './images/css.png';
 import js from './images/js.png';
 import react from './images/react.png';
 import python from './images/python.png';
-import django from './images/django.png';
 import profile from './images/profile.jpg';
+import node from './images/node.png';
+import mysql from './images/mysql.png';
 
 const About = () => {
     return ( 
@@ -16,7 +17,7 @@ const About = () => {
                         <Card.Body className="m-0 p-0" >
                             <Card.Title as="h1" className="text-black my-5" style={{ fontWeight: '800'}}>About me</Card.Title>
                                 <Row className="my-3">
-                                    <Col sm={4} xs={{ order: 'last' }} sm={{ order: 'first' }}>
+                                    <Col sm={4} >
                                         <Image src={profile} rounded className="img-fluid border border-5 shadow" />
                                     </Col>
 
@@ -44,8 +45,10 @@ const About = () => {
                                             <Image src={css} height="60px" className="p-2" />
                                             <Image src={js} height="70px" className="p-2" />
                                             <Image src={react} height="70px" className="p-2" />
+                                            <Image src={node} height="70px" className="p-2" />
+                                            <Image src={mysql} height="70px" className="p-2" />
                                             <Image src={python} height="60px" className="p-2" />
-                                            <Image src={django} height="50px" className="p-2" />
+                                            
                                         </Card.Text>
                                     </Col>
                                 </Row>
