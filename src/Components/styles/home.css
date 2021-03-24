@@ -1,9 +1,8 @@
-.name > svg, .surname> svg {
+.name > svg, .surname > svg {
     stroke: white;
     stroke-width: 2px;
-    fill: #8a0200;
     cursor: pointer;
-    
+    fill: #8a0200;
 }
 
 #draw-shadow {
@@ -26,10 +25,10 @@
 /* Initial animation */
 @media screen and (min-width: 992px) {
     .capital-m{
-        animation: colorChange 2200ms linear 1000ms;
+        animation: colorChange 2200ms linear 1500ms;
     }
     .capital-g{
-        animation: colorChange 2200ms linear 3500ms;
+        animation: colorChange 2200ms linear 4000ms;
     }
 }
 
@@ -58,11 +57,11 @@
 /* Initial animation */
 @media screen and (min-width: 992px) {
     .show-name{
-        animation: showText 1500ms ease-in-out 1500ms;
+        animation: showText 1500ms ease-in-out 2000ms;
     }
 
     .show-surname{
-        animation: showText 1500ms ease-in-out 4000ms;
+        animation: showText 1500ms ease-in-out 4500ms;
     }
 }
 
